@@ -1,6 +1,8 @@
 # Game Tracker
 # Alex Brandt
 
+![Game-tracker](assets/gametracker.png)
+
 ## About
 A fullstack fantasy-themed game tracking application. Keep track of your games, platforms, genres, status and ratings.
 
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 
 Create a `.env` file inside the `backend/` folder:
 ```bash
-DATABASE_URL=postgresql://username:password@localhost/games
+DATABASE_URL=postgresql://username:password@localhost/your-database-name
 ```
 
 Start the server:
@@ -49,13 +51,13 @@ Frontend will be running at `http://localhost:5173`
 
 ## Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /games | Get all games |
-| GET | /games/{id} | Get a single game |
-| POST | /games | Create a new game |
-| PUT | /games/{id} | Update a game |
-| DELETE | /games/{id} | Delete a game |
+| Method | Endpoint    | Description       |
+|--------|-------------|-------------------|
+| GET    | /games      | Get all games     |
+| GET    | /games/{id} | Get a single game |
+| POST   | /games      | Create a new game |
+| PUT    | /games/{id} | Update a game     |
+| DELETE | /games/{id} | Delete a game     |
 
 ## Tech Stack
 - **Backend:** FastAPI, SQLAlchemy, PostgreSQL, Pydantic
